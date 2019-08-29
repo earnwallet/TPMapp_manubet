@@ -1,0 +1,2 @@
+ + deposit
+ + use this command to transfer money from TPM to your casino
