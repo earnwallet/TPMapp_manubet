@@ -1,4 +1,4 @@
-echo $1
-echo $2
-echo $3
-echo $4
+resp=$(curl /?action=bet&amount=`echo "$1 * 100000000" | bc -l `&chance=$2&bethi=$3);
+ec=$?
+echo $resp;
+exit $ec;
