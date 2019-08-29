@@ -72,8 +72,8 @@ then
     echo "OK!";
 else
     echo "Oups! I need to fixie it UwU"
-    mkdir mods;
-    cd mods;
+    mkdir config;
+    cd config;
     echo "Done";
 fi
 echo "$port" > port.txt;
@@ -84,19 +84,19 @@ clear;
 echo "Configuration finished, starting...";
 echo "   Commands  ";
 echo "=============";
-cd /home/`whoami`/TPM/mods/manubet/commands/
+cd /home/`whoami`/TPM/apps/manubet/commands/
 for f in *;
 do
     echo " ---- $f ";
-    cd "/home/`whoami`/TPM/mods/manubet/commands/$f"
+    cd "/home/`whoami`/TPM/apps/manubet/commands/$f"
     cat usage.txt
-    cd /home/`whoami`/TPM/mods/manubet/commands
+    cd /home/`whoami`/TPM/apps/manubet/commands
 done
 echo "=============";
 while [ 1 ];
 do
     echo "`whoami`@manubet>";
     read command
-    cd "/home/`whoami`/TPM/mods/manubet"
+    cd "/home/`whoami`/TPM/apps/manubet"
     bash cmd.sh $command;
 done
