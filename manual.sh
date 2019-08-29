@@ -20,9 +20,9 @@ then
     list="info.txt port.txt readme.txt";
     for l in $list;
     do
+        echo " > $l";
         for f in *;
         do
-            echo " > $l";
             if [ "$f" == "$l" ];
             then
                 echo "File: $l";
