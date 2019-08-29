@@ -1,0 +1,7 @@
+This is manual for manubet, here you can wager your money.
+by @Cyjan
+
+=============
+[!] Before you start using this tool you need to know on which port is betting module listening, usually this can be found in README.md file or in instructions of manual.
+=============
+Usually port is displayed when you start manubet
