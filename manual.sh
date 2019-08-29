@@ -65,7 +65,7 @@ then
     echo " (+) No host defined, using 127.0.0.1";
     host="127.0.0.1";
 fi
-cd /home/`whoami`/TPM/mods/manubet;
+cd /home/`whoami`/TPM/apps/manubet;
 cd config;
 if [ "$?" == 0 ];
 then
