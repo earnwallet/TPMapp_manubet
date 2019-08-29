@@ -1,0 +1,4 @@
+ + b [amount] [chance] [prediction]
+ + For example:
+ + b 10 50 lo
+ + to bet 10 Doge at 50% chance to win on low numbers.
