@@ -15,7 +15,7 @@ fi
 if [ "$choi" == "1" ];
 then
     echo "Starting manual.sh";
-    cd /home/`whoami`/TPM/manubet/
+    cd /home/`whoami`/TPM/apps/manubet/
     echo "==== START ====";
     bash manual.sh
     echo "==== STOP ====";
