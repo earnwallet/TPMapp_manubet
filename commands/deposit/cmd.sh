@@ -4,12 +4,12 @@ echo "Do you want to deposit money? [Y/n]";
 read cho;
 if [ "$cho" == "Y" -o "$cho" == "y" ];
 then
-    port=$(cat /home/`whoami`/TPM/mods/manubet/config/port.txt)
-    host=$(cat /home/`whoami`/TPM/mods/manubet/config/host.txt)
+    port=$(cat /home/`whoami`/TPM/apps/manubet/config/port.txt)
+    host=$(cat /home/`whoami`/TPM/apps/manubet/config/host.txt)
     serv="$host:$port";
     echo "OK!";
     echo "Your balance [TPM] : `dogecoin-cli getbalance`";
-    echo "Your balance [SITE]: `curl $serv/?action=balance`";
+    echo "Your balance [SITE]: `curl "$serv/?action=balance"`";
     echo "How much do you want to send to site?";
     read amt
     echo "Getting deposit address";
