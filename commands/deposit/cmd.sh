@@ -22,10 +22,11 @@ then
         exit 1;
     fi
     echo "Sending money...";
-    sleep 10;
+    #sleep 10;
     dogecoin-cli sendtoaddress "$add" $amt;
+    ec=$?
     echo "Complete";
-    exit 0;
+    exit $ec;
 else
     echo "Uh.. Okay.. Call me when you need me honey";
     exit 0;
